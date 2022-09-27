@@ -1,4 +1,4 @@
-name: GazeTracking
+name: eyegaze
 channels:
   - conda-forge
   - anaconda
