@@ -56,7 +56,9 @@ def screen_cam():
         out.write(img)
         # Press 'q' to quit
         ###########END OF RECORDER
-        gaze.refresh(frame)
+        #gaze.refresh(frame)
+        cv2.imshow('Frame',frame)
+
 
         if gaze.is_blinking():
             update_focus('Blinking')
@@ -94,5 +96,4 @@ def close():
 if __name__ =='__main__': 
     record_screen = Process(target=screen_cam)
     record_screen.start()
-    app.run(debug = True)
     

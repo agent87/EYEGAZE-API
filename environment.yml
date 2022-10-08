@@ -1,4 +1,4 @@
-name: tracker
+name: eyegaze
 channels:
   - conda-forge
   - defaults
